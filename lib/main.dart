@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:reminder_fe/pages/home_pages.dart';
+import 'package:reminder_fe/pages/choose.dart';
+import 'package:reminder_fe/pages/login_pages.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePages()
+      home: Welcome(),
+
+      debugShowCheckedModeBanner: false,
     );
   }
 }
