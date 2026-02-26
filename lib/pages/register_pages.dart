@@ -30,6 +30,8 @@ class _RegisterState extends State<Register> {
           "Register ", 
           style: GoogleFonts.poppins(color: Color(0xFFF9F4DB,), fontSize: 60),
           ),
+          SizedBox(height: 20,),
+          Text("Register Untuk Mendapat Akses ke Dalam Aplikasi", style: GoogleFonts.poppins(fontSize: 15, color:Color(0xFFF9F4DB)),)
         ],
      ),
 

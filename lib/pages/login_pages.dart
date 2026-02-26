@@ -29,6 +29,8 @@ class _LoginPagesState extends State<LoginPages> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Text("Login Pages", style:  GoogleFonts.poppins(fontSize: 60, color:Color(0xFFF9F4DB)), ),
+          SizedBox(height: 20,),
+          Text("Login Untuk Mendapat Akses ke Dalam Aplikasi", style: GoogleFonts.poppins(fontSize: 15, color:Color(0xFFF9F4DB)),)
         ],
       ),
       
