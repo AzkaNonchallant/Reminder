@@ -12,12 +12,12 @@ class AuthLayout extends StatelessWidget {
       body: Stack(
         children: [
           Container(
-            color: Colors.amber,
+            color: Color(0xFF6EB5A5),
             height: double.infinity,
             width: double.infinity,
              child: SafeArea(
     child: Padding(
-      padding: EdgeInsets.only(top: 40),
+      padding: EdgeInsets.only(top: 80),
       child: header,
     ),
   ),
@@ -28,7 +28,7 @@ class AuthLayout extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.55,
             padding: EdgeInsets.all(25),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Color(0xFFF9F4DB),
               borderRadius: BorderRadius.vertical(
                 top: Radius.circular(40)
               ),
