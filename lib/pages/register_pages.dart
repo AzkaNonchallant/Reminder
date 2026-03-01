@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:reminder_fe/controller/auth_controller.dart';
+import 'package:reminder_fe/pages/home_pages.dart';
 import 'package:reminder_fe/pages/login_pages.dart';
 import 'package:reminder_fe/widget/input_widget.dart';
 import 'package:reminder_fe/widget/stacked.dart';
@@ -73,7 +74,7 @@ class _RegisterState extends State<Register> {
           width: double.infinity,
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.black, shape: StadiumBorder()),
-            onPressed: (){},
+            onPressed: () async { bool success = await _authController.register(_nameController.text, _usernameController.text, _emailController.text, _passwordController.text); if(success) {Get.offAll(()=>HomePages());} else{Get.snackbar("error", "Credential salah");}},
             child: Text('Sign In', style: TextStyle(color: Colors.white),)
             ),
         ),  
